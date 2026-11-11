@@ -5,38 +5,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body class="bg-body">
     <header>
-        <nav class="container-fluid bg-primary text-white d-flex justify-content-between py-2">
-            <h3 class="text-center">EpiShop</h3>
-            <ul class="nav justify-content-end gap-4 ">
-                <li class="nav-item text-white">
-                    <a href="#" class="text-decoration-none text-reset">Prodotti</a>
-                </li>
-                <li class="nav-item text-white">
-                    <a href="#" class="text-decoration-none text-reset">Offerte</a>
-                </li>
-                <li class="nav-item d-none d-md-inline text-white">
-                    <a href="#" class="text-decoration-none text-reset">Contatti</a>
-                </li>
-            </ul>
-        </nav>
+        <nav
+			class="navbar navbar-expand-lg bg-primary navbar-dark">
+				<div class="container-fluid">
+					<a class="navbar-brand fw-bold" href="index.html">EpiShop</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarNav"
+						aria-controls="navbarNav"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+                        
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div
+						class="collapse navbar-collapse"
+						id="navbarNav"
+					>
+						<ul class="navbar-nav ms-auto">
+						
+							<li class="nav-item">
+								<a
+									class="nav-link myLink btn btn-primary text-start"
+									href="#"
+									>Prodotti</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link myLink btn btn-primary text-start"
+									href="#"
+									>Offerte</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link myLink btn btn-primary text-start"
+									href="#"
+									>Contatti</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
     </header>
-    <div class="bg-light text-center ">
+    <!--<div class="bg-light text-center ">
         <br>
         <h1 class="fw-bold">Saldi di primavera</h1>
         <p>Scopri le offerte sui prodotti in evidenza, fino al 50% di Sconto</p>
         <button class="bg-primary rounded-3 px-3 py-1"><a href="#prodotti" class="text-decoration-none text-white">Vedi
-                prodotti</a></button>
-        <br><br>
+                prodotti</a></button>-->
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active bg-primary text-white text-center py-5">
+        <h1 class="fw-bold">Saldi di primavera</h1>
+        <p class="lead">Scopri le offerte sui prodotti in evidenza, fino al 50% di Sconto</p>
     </div>
+    <div class="carousel-item bg-success text-white text-center py-5">
+      <h1 class="fw-bold">Nuova Collezione</h1>
+        <p class="lead">Tutte le ultime tendenze della stagione</p>
+    </div>
+    <div class="carousel-item bg-dark text-white text-center py-5">
+  <h1 class="fw-bold">Spedizione Gratuita</h1>
+<p class="lead">Su tutti gli ordini superiori a 50€</p>
+  </div>
+</div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Precedente</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Successivo</span>
+  </button>
+</div>
+    
+        <br><br>
     <main class="container my-5" id="prodotti">
         <div class="row ">
-            <aside class="col-lg-3 d-none d-xl-block">
+            <aside class="col-xl-3 d-none d-xl-block">
                 <div class="bg-light p-3 rounded border">
                     <h3 class="fs-5 fw-bold mb-3">Categorie</h3>
                     <p class="m-0 mb-2">Scarpe</p>
@@ -46,32 +102,45 @@
                 </div>
             </aside>
             <section class="col-12 col-xl-9 ">
-                <h3 class="fw-bold ">Prodotti in evidenza</h3><br>
+                <h3 class="fw-bold ">Prodotti in evidenza<span class="badge text-bg-danger">-30%</span></h3><br>
 
-                <div class="row gap-3 mx-2">
-
-
-                    <div class=" col-12 col-lg-5 col-xl-3  border rounded p-2">
-                        <div class=" bg-secondary  mt-3 p-5 rounded-2"> &nbsp </div>
-
-                        <h5>Sneaker Run</h5>
-                        <p>€89,00</p>
-
+                <div class="row">
+                    <div class="col-12 col-lg-6 col-xl-4 mb-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://media.istockphoto.com/id/1980276924/vector/no-photo-thumbnail-graphic-element-no-found-or-available-image-in-the-gallery-or-album-flat.jpg?s=612x612&w=0&k=20&c=ZBE3NqfzIeHGDPkyvulUw14SaWfDj2rZtyiKv3toItk=" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Sneaker Run</h5>
+                                <p class="card-text">€89,00</p>
+                                <a href="#" class="btn btn-primary">Dettagli</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class=" col-12 col-lg-5 col-xl-3 border rounded p-2">
-                        <div class=" bg-secondary  mt-3 p-5 rounded-2"> &nbsp </div>
-
-                        <h5>T-shirt Basic</h5>
-                        <p>€19,00</p>
-
+                    <!--Modale-->
+                     <div class="col-12 col-lg-6 col-xl-4 mb-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://media.istockphoto.com/id/1980276924/vector/no-photo-thumbnail-graphic-element-no-found-or-available-image-in-the-gallery-or-album-flat.jpg?s=612x612&w=0&k=20&c=ZBE3NqfzIeHGDPkyvulUw14SaWfDj2rZtyiKv3toItk=" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Sneaker Run</h5>
+                                <p class="card-text">€89,00</p>
+                                <a href="#" class="btn btn-primary">Dettagli</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class=" col-12 col-lg-5 col-xl-3 border rounded p-2">
-                        <div class=" bg-secondary border border-2 mt-3 p-5 rounded-2"> &nbsp </div>
-
-                        <h5>Borsa city</h5>
-                        <p>€49,00</p>
-
+                    <!--Modale-->
+                     <div class="col-12 col-lg-6 col-xl-4 mb-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://media.istockphoto.com/id/1980276924/vector/no-photo-thumbnail-graphic-element-no-found-or-available-image-in-the-gallery-or-album-flat.jpg?s=612x612&w=0&k=20&c=ZBE3NqfzIeHGDPkyvulUw14SaWfDj2rZtyiKv3toItk=" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Sneaker Run</h5>
+                                <p class="card-text">€89,00</p>
+                                <a href="#" class="btn btn-primary">Dettagli</a>
+                            </div>
+                        </div>
                     </div>
+                    <!--Modale-->
+
+
+                   
 
 
                 </div>
@@ -85,6 +154,8 @@
         <br>
         <p>&copy 2026 EpiShop- Tutti i diritti riservati</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
